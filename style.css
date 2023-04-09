@@ -1,3 +1,42 @@
 #gameCanvas {
-  border: 1px solid black;
+  border: 5px solid #f1c40f; /* Add a thick yellow border */
+  background-color: #3498db; /* Set the background color to blue */
+  display: block;
+  margin: auto;
+}
+
+/* Style the left paddle */
+#leftPaddle {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 100px;
+  background-color: #2ecc71; /* Set the paddle color to green */
+  border-radius: 10px;
+}
+
+/* Style the right paddle */
+#rightPaddle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 100px;
+  background-color: #e74c3c; /* Set the paddle color to red */
+  border-radius: 10px;
+}
+
+/* Style the ball */
+#ball {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #f39c12; /* Set the ball color to orange */
+  border-radius: 50%;
 }
